@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: cardgame
+  datasource:
+    url: jdbc:h2:mem:cardgame-db
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+  cache:
+    type: simple
+
+logging:
+  level:
+    root: INFO
+  file:
+    name: logs/app.log
+
+omdb:
+  api-key: <INSERT PERSONAL KEY>
